@@ -11,17 +11,14 @@ import Projects from './Projects';
 import About from './About';
 import Skills from './Skills';
 import Blogs from './Blogs';
+import Contact from './Contact';
 
 class App extends Component {
   render() {
     return (
       <div >
-
-
-
-        <Navbar />
-
-        
+      
+        <Navbar />       
 
         <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
@@ -29,6 +26,7 @@ class App extends Component {
         <Route path="/skills" component={Skills} />
         <Route path="/about" component={About} />
         <Route path="/blog" component={Blogs} />
+        <Route path="/contact" component={Contact} />
 
       </div>
     );
