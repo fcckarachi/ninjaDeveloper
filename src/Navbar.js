@@ -26,6 +26,7 @@ export default class Navbar extends Component {
                         <Link to="/about" className="navbar-item">About</Link>
                         <Link to="/skills" className="navbar-item">Skills</Link>
                         <Link to="/projects" className="navbar-item">Projects</Link>
+                         <Link to="/contact" className="navbar-item">Contact</Link>
                         {/*<Link to="/contact" className="navbar-item">Contact </Link>*/}
                     
                         {/*<a className="navbar-item" href="#">
