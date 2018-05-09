@@ -31,7 +31,7 @@ export default class Blogs extends Component {
     getBlogItem(item, index) {
         //console.log(item);
         return (
-            <div className="columns">
+            <div className="columns" key={index}>
                 <div className="column">
                     <a href={item.link} target="_blank">
                         <div className="card">
