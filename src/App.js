@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import 'bulma/css/bulma.css';
 import 'devicons/css/devicons.css';
+import 'font-awesome/css/font-awesome.css';
 
 import Navbar from './Navbar';
 import Home from './Home';
@@ -17,8 +18,8 @@ class App extends Component {
   render() {
     return (
       <div >
-      
-        <Navbar />       
+
+        <Navbar />
 
         <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
