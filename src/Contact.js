@@ -20,7 +20,7 @@ export default class Contact extends Component {
     form_Submit(e) {
         e.preventDefault();
 
-        const {name, email, comments} = this.state;
+        const { name, email, comments } = this.state;
         let obj = { name, email, comments }, promise;
 
         axios.post("https://formcarry.com/s/H1fKY1Q6z", obj)
@@ -29,7 +29,7 @@ export default class Contact extends Component {
     }
 
     render() {
-        const {blogs, name, email, comments} = this.state;
+        const { blogs, name, email, comments } = this.state;
         return (
             <section className="hero  is-success is-fullheight">
                 <div className="hero-body">
@@ -45,7 +45,7 @@ export default class Contact extends Component {
                                             <input name="name" className="input is-large" type="text" placeholder="Your Name"
                                                 value={name} required />
                                             <span className="icon is-small is-left">
-                                                <i className="fas fa-user"></i>
+                                                <i className="fa fa-user"></i>
                                             </span>
                                         </div>
                                     </div>
@@ -57,7 +57,7 @@ export default class Contact extends Component {
                                             <input name="email" value={email} className="input is-large"
                                                 type="email" placeholder="Your Email" required />
                                             <span className="icon is-small is-left">
-                                                <i className="fas fa-envelope"></i>
+                                                <i className="fa fa-envelope"></i>
                                             </span>
                                         </div>
                                     </div>
