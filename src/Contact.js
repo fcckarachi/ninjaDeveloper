@@ -21,7 +21,7 @@ export default class Contact extends Component {
         e.preventDefault();
 
         const { name, email, comments } = this.state;
-        let obj = { name, email, comments }, promise;
+        let obj = { name, email, comments };
 
         axios.post("https://formcarry.com/s/H1fKY1Q6z", obj)
             .then(res => console.log(res))
@@ -29,7 +29,7 @@ export default class Contact extends Component {
     }
 
     render() {
-        const { blogs, name, email, comments } = this.state;
+        const { name, email, comments } = this.state;
         return (
             <section className="hero  is-success is-fullheight">
                 <div className="hero-body">

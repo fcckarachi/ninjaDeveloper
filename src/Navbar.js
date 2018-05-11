@@ -1,30 +1,30 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
 
-    constructor(){
+    constructor() {
         super();
 
         this.state = {
-            navbarExpand : false
+            navbarExpand: false
         }
     }
 
-    onClick(e){
+    onClick(e) {
         let navbarExpand = !this.state.navbarExpand;
-        this.setState({navbarExpand:navbarExpand});
+        this.setState({ navbarExpand: navbarExpand });
     }
 
     render() {
         let navbarStyle = {};
         let navbarExpand = this.state.navbarExpand;
-        if (navbarExpand){
-            navbarStyle['display']= 'block'; 
+        if (navbarExpand) {
+            navbarStyle['display'] = 'block';
         }
-        
+
         return (
-            <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <nav className="navbar is-fixed-top" aria-label="main navigation">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://bulma.io">
                         <img src="https://bulma.io/images/bulma-logo.png"
@@ -45,9 +45,9 @@ export default class Navbar extends Component {
                         <Link to="/about" className="navbar-item">About</Link>
                         <Link to="/skills" className="navbar-item">Skills</Link>
                         <Link to="/projects" className="navbar-item">Projects</Link>
-                         <Link to="/contact" className="navbar-item">Contact</Link>
+                        <Link to="/contact" className="navbar-item">Contact</Link>
                         {/*<Link to="/contact" className="navbar-item">Contact </Link>*/}
-                    
+
                         {/*<a className="navbar-item" href="#">
                             Home
                         </a>

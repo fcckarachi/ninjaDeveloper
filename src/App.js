@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Route, Link
-} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import 'bulma/css/bulma.css';
 import 'devicons/css/devicons.css';
 import 'font-awesome/css/font-awesome.css';

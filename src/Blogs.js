@@ -16,7 +16,7 @@ export default class Blogs extends Component {
     }
 
     getBlogs() {
-        let url, promise;
+        let url
 
         url = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.freecodecamp.org/feed";
 
@@ -39,7 +39,7 @@ export default class Blogs extends Component {
                                 <div className="columns">
                                     <div className="column">
                                         <figure className="image is-2by1">
-                                            <img src={item.thumbnail} />
+                                            <img src={item.thumbnail} alt="Blog thumbnail" />
                                         </figure>
                                     </div>
                                     <div className="column is-three-quarters">
@@ -62,7 +62,7 @@ export default class Blogs extends Component {
     }
 
     render() {
-        const {blogs} = this.state;
+        const { blogs } = this.state;
         return (
             <section className="hero is-light is-fullheight">
                 <div className="hero-body">

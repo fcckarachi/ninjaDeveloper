@@ -1,14 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { 
-    BrowserRouter as Router,
-    Route ,
-    Link 
-} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from './App';
-import Home from './Home';
-import About from './About';
+
 
 
 //<IndexRoute component={Home} />
@@ -26,11 +21,11 @@ import About from './About';
 // )
 
 // const Routes = () => {
-    
+
 // }
 
 ReactDOM.render(
-    <Router>    
+    <Router>
         <App />
     </Router>,
     document.getElementById('root')
